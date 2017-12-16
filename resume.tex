@@ -14,6 +14,10 @@
 \usepackage{verbatim}
 \usepackage{enumitem}
 \usepackage[pdftex]{hyperref}
+\hypersetup{
+	hidelinks=true,
+	urlcolor = [rgb]{0,0,0.5}
+}
 \usepackage{fancyhdr}
 
 \usepackage{tgheros}
@@ -24,11 +28,11 @@
 \renewcommand{\footrulewidth}{0pt}
 
 % Adjust margins
-\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\oddsidemargin}{-0.6in}
 \addtolength{\evensidemargin}{-0.375in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+\addtolength{\textwidth}{1.2in}
+\addtolength{\topmargin}{-0.75in}
+\addtolength{\textheight}{1.2in}
 
 \urlstyle{same}
 
@@ -38,20 +42,20 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
+  \vspace{-6pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 %-------------------------
 % Custom commands
 \newcommand{\resumeItem}[2]{
-  \item\small{
+  \item[]\small{
     \textbf{#1}{: #2 \vspace{-2pt}}
   }
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-1pt}\item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+  \vspace{-1pt}\item[]
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-5pt}
@@ -61,10 +65,10 @@
 
 \renewcommand{\labelitemii}{$\circ$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt]}
 \newcommand{\resumeSubHeadingListStartNM}{\begin{itemize}[noitemsep, leftmargin=12pt]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[noitemsep, leftmargin=8pt]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
@@ -75,10 +79,14 @@
 \fontfamily{qhv}\selectfont
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{http://rkrsn.us/}{\Large \textsc{Rahul} KRISHNA}} & Email : \href{mailto:rkrish11@ncsu.edu}{rkrish11@ncsu.edu}\\
-  \href{http://rkrsn.us/}{http://rkrsn.us} & Mobile : +1-919-396-4143 \\
-  119 Karen Ct, Cary, NC 27511& LinkedIn: \href{www.linkedin.com/in/rkrsn
-}{linkedin.com/in/rkrsn}\\[-0.2cm]
+  \textbf{{\LARGE \textsc{Rahul} KRISHNA}} & Email : 
+  \href{mailto:rkrish11@ncsu.edu}{rkrish11@ncsu.edu}\\
+  \href{http://rkrsn.us/}{http://rkrsn.us} $\diamond$ 
+  \href{https://scholar.google.com/citations?view_op=list_works&hl=en&user=WGggocoAAAAJ}{Google
+   Scholar} & Mobile : 
+  +1-919-396-4143 \\
+  119 Karen Ct, Cary, NC 27511& LinkedIn: 
+  \href{https://www.linkedin.com/in/rkrsn/}{linkedin.com/in/rkrsn}\\[-0.3cm]
 \end{tabular*}
 
 
@@ -92,21 +100,83 @@
       {MS in Electrical Engineering}{Aug. 2013 -- May 2015}
       {North Carolina State University}{Raleigh, NC}\vspace{-1pt}
     \resumeSubheading
-      {BE in Electronics and Communication}{Aug. 2009 -- May 2013}
-      {Ramaiah Institute Of Technology}{Bengaluru, India}\vspace{-4pt}
+      {BE in Electronics \& Communication}{Aug. 2009 -- May 2013}
+      {Ramaiah Institute Of Technology}{Bengaluru, India}\vspace{-0.33cm}
         \resumeSubHeadingListEnd
 
 
 %-----------EXPERIENCE-----------------
 \section{Technical Skills}
   \resumeSubHeadingListStart
-    \resumeSubItem{General Expertise}{Machine Learning, NLP, Multiobjective Optimization, Distributed Computing, and DevOps Pipelines;}
+    \resumeSubItem{General Expertise}{Empirical Software Engineering, Machine 
+    Learning, NLP, Multiobjective Optimization, Distributed Computing, 
+    DevOps;}
     \resumeSubItem{Data Analytics}{Spark, Hadoop, Elasticsearch, S3, Weka, Sklearn, JMetal, etc. Visualization: Kibana, D3JS, Matplotlib, etc.;}
-    \resumeSubItem{Programming}{Proficient: Python, Javascript, and R. Also familiar with: Java, Scala, C++, and Lua;}
-    \resumeSubItem{Cloud Computing}{AWS ecosystem: EMR, Apache Livy, Cloud Formation, AWS Lambda, Chalice, etc.;}
-    \resumeSubItem{DevOps}{Ansible, Vagrant, Travis, Jenkins, Docker, etc.}
+    \resumeSubItem{Cloud Computing}{AWS ecosystem: EMR, Apache Livy, Cloud 
+    Formation, AWS Lambda, Chalice, etc.;}
+    \resumeSubItem{Programming}{Proficient: Python, Javascript, \& R. Also 
+    familiar with: Java, Scala, C++, \& Lua;}
+    \resumeSubItem{DevOps}{Ansible, Vagrant, Travis, Jenkins, Docker, 
+    etc.}\vspace{-0.1cm}
   \resumeSubHeadingListEnd
 
+\section{Selected Research Projects}
+
+\resumeSubHeadingListStart
+
+\resumeSubheading{Planning in Software Engineering}{Sept 2015 - Present}
+{NSF funded project in the RAISE Lab}{Raleigh, NC}\vspace{-0.25cm}
+\resumeItemListStart
+	\item Developed a novel planning algorithm called XTREE to assist 
+	developers in software refactoring and code reorganization.
+	\item Showed that XTREE can generate succinct and effective plans. 
+	Experiments showed that XTREE can reduce defects by more than 80\% in 
+	several cases.\vspace{-0.1cm}
+\resumeItemListEnd
+
+\resumeSubheading{Transfer Learning in Software Engineering}{Sept 2015 - 
+Present}{NSF funded project in the RAISE Lab}{Raleigh, NC}\vspace{-0.25cm}
+\resumeItemListStart
+	\item Demonstrated the existence of a \textit{``Bellwether Effect''} in 
+	several domains within software engineering.
+	\item The \textit{bellwethers} were shown to be a very effective baseline 
+	for transfer learning. Also showed that they are very easy to discover and 
+	usually outperform 
+	several 
+	state-of-the-art transfer learners in software engineering.\vspace{-0.1cm}
+\resumeItemListEnd
+
+\resumeSubheading{Validating Industrial Text Mining}{Sept 2015 - May 2017}
+{Industrial collaboration with LexisNexis}{Raleigh, NC}\vspace{-0.25cm}
+\resumeItemListStart
+\item Worked on validating large scale natural language processing pipelines 
+for technology assisted review at LexisNexis.
+\item Demonstrated the usefulness of context specific ensemble learners and 
+active learning for document classification.
+\item Demonstrated the effectiveness of several data preprocessing techniques 
+such SMOTE for enhancing information retrieval.\vspace{-0.2cm}
+\resumeItemListEnd
+
+
+\resumeSubHeadingListEnd
+
+\section{Work Experience}
+
+\resumeSubHeadingListStart
+\resumeSubheading{Data Science Intern}{May 2017 - Aug. 2017}
+{LexisNexis}{Raleigh}
+\resumeItemListStart
+\item 
+\item 
+\resumeItemListEnd
+
+\resumeSubheading{Software Engineering Intern}{May 2016 - Aug. 2016}
+{LexisNexis}{Raleigh}
+\resumeItemListStart
+\item 
+\item 
+\resumeItemListEnd
+\resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------------
 \section{Selected Publications}
@@ -122,7 +192,11 @@
     
     \item\small \underline{Krishna, R}. \textit{``Learning effective changes for software projects''}. 32nd Intl. Conference on Automated Software Engineering Doctoral Symposium, October 2017. Available: \href{https://arxiv.org/abs/1708.04589}{http://dl.acm.org/citation.cfm?id=3155562.3155695}\vspace{-6pt};
     
-    \item\small \underline{Krishna, R.}, Agrawal, A., Rahman, A., Sobran, A., \& Menzies, T. \textit{``What is the Connection Between Issues, Bugs, and Enhancements? (Lessons Learned from 800+ Software Projects)''}. (Under review) ICSE 2018 Software Engineering in Practice. Preprint: \href{https://arxiv.org/abs/1710.08736}{arXiv:1710.08736}\vspace{-6pt};
+    \item\small \underline{Krishna, R.}, Agrawal, A., Rahman, A., Sobran, A., 
+    \& Menzies, T. \textit{``What is the Connection Between Issues, Bugs, and 
+    Enhancements? (Lessons Learned from 800+ Software Projects)''}. (Under 
+    review) ICSE 2018 Software Engineering in Practice. Pre: 
+    \href{https://arxiv.org/abs/1710.08736}{arXiv:1710.08736}\vspace{-6pt};
     
     \item\small Rahman, A., Agrawal, A., \underline{Krishna, R.}, Sobran, A., \& Menzies, T. \textit{``Continuous Integration: The Silver Bullet?''}. (Under review) ICSE 2018 Software Engineering in Practice. Preprint: \href{https://arxiv.org/abs/1711.03933}{arXiv:1711.03933}\vspace{-6pt};
 \end{enumerate}
