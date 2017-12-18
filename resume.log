@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2017.12.10)  16 DEC 2017 19:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2017.12.10)  18 DEC 2017 22:57
 entering extended mode
 **./resume.tex
 (resume.tex
@@ -282,20 +282,20 @@ LaTeX Font Info:    Try loading font information for U+lasy on input line 81.
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 185.
+(Font)              <9> on input line 194.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 185.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 217.
+(Font)              <6> on input line 194.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 248.
  [1
 
 {C:/Users/Padma/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 217.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 248.
  (resume.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 217.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 217.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 248.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 248.
 Package rerunfilecheck Info: File `resume.out' has not changed.
 (rerunfilecheck)             Checksum: 7288511727F046742977DCC9DB29187F;267.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 217.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 248.
  ) 
 Here is how much of TeX's memory you used:
  6087 strings out of 493312
@@ -304,16 +304,16 @@ Here is how much of TeX's memory you used:
  9584 multiletter control sequences out of 15000+200000
  37423 words of font info for 35 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 28i,11n,43p,358b,324s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 28i,11n,43p,207b,324s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Padma/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/tex-gyre/q-rm.enc}
 {C:/Users/Padma/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/tex-gyre/q-rm-sc.enc
 }<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Use
 rs/Padma/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/tex-gyre/qhvb.pfb><C:/Us
 ers/Padma/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/tex-gyre/qhvr.pfb><C:/U
 sers/Padma/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/tex-gyre/qhvri.pfb>
-Output written on resume.pdf (1 page, 92977 bytes).
+Output written on resume.pdf (1 page, 95184 bytes).
 PDF statistics:
- 75 PDF objects out of 1000 (max. 8388607)
+ 76 PDF objects out of 1000 (max. 8388607)
  14 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
