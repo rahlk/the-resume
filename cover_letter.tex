@@ -1,0 +1,158 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,letterpaper,sans]{moderncv}         \moderncvstyle{casual}
+\moderncvcolor{blue}
+\usepackage[utf8]{inputenc}
+\usepackage[scale=0.75]{geometry}
+\setlength{\hintscolumnwidth}{3cm}                
+
+% personal data
+\name{Rahul}{Krishna}
+\title{Cover Letter}
+\address{119 Karen Ct}{Cary, NC 27511}{USA}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+1~(919)~396-4143}                   % optional, remove / 
+%comment the line if not wanted
+\email{rkrish11@ncsu.edu}                               % optional, remove / comment the line if not wanted
+\homepage{rkrsn.us}                         % optional, % to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%-----       letter       ---------------------------------------------------------
+% recipient data
+\recipient{Bloomberg LP}{731 Lexington Ave,\\
+New York, NY 10022\\
+USA}
+\date{\today}
+\opening{Dear Sir or Madam,}
+\closing{Yours Sincerely,}
+\enclosure[Attached]{R\'{e}sum\'{e}}
+
+\makelettertitle
+
+I am writing to apply for a full-time position at Bloomberg. I am a Final year 
+Ph. D. student majoring in computer science from North Carolina State 
+University. I am being advised by Dr. Tim Menzies. My research focuses 
+primarily on empirical software engineering, computational linguistics, and 
+data driven decision making.
+
+I believe that I have the industrial and research experience required to be an 
+effective team member at your group. In terms of industrial experience, I have 
+worked extensively with machine learning, natural language processing, and 
+their applications to legal text mining. Following is a brief summary of my 
+work:\\[0.33cm]
+\begin{itemize}
+	\item Over the summer of 2017, I worked on 
+deploying large scale computational linguistics and 
+machine learning algorithms for processing over 1 million of legal documents. 
+Specifically, I developed tools for automated text summarization of very large 
+legal documents using TensorFlow. With these I was able to summarize large 
+legal documents into so-called \textit{headnotes}. Subject matter experts 
+opined that 
+these headnotes were very similar to human-generated analogs. Further, I was 
+also responsible for developing additional machine learning algorithms so that 
+they can be deployed to production. To achieve this, I worked extensively with 
+the devops pipeline within the AWS ecosystem to enable seamless integration of 
+machine learning algorithms with the current product.\\[0.1cm]
+ \item In the summer of 2016, I was tasked with "opening the black-box" that is 
+ SVM. For this, I designed a sandbox app for e-discovery. This sandbox was very 
+ useful improving the classification accuracy of SVM by approximately 20\%. My 
+ Contributions include: 
+ (1) Translating internal mechanisms of SVM into human comprehensible format. 
+ For this, I extracted the support vectors and mapped them to actual words, 
+ phrases, and paragraphs in the text. These were then presented to users so 
+ they may get some insights on how SVM made its prediction; 
+ (2) By soliciting feedback from the end users (human-in-loop) regarding the 
+ quality of these support vectors, I was able to incorporate these feedback 
+ with the help of active learning to improve the text classification accuracy 
+ of SVM.
+ 
+\end{itemize}
+
+As to my research work, several of my recent papers show that I have done work 
+in areas that may be of further interest to you. Much of my work studies how 
+machine learning applications can be applied to streamline software engineering 
+practices. I have 3 papers 
+under review at this time for the ICSE'18 software engineering in practice 
+track.  \\[0.33cm]
+
+\begin{itemize}
+    \item\small \underline{Krishna, R.}, Agrawal, A., Rahman, A., Sobran, A., 
+    \& Menzies, T. \textit{``What is the Connection Between Issues, Bugs, and 
+    Enhancements? (Lessons Learned from 800+ Software Projects)''}. (Under 
+    review) \textbf{ICSE 2018 SEIP}. Pre: 
+    \href{https://arxiv.org/abs/1710.08736}{arXiv:1710.08736};\\[0.1cm]
+    
+    \item\small Rahman, A., Agrawal, A., \underline{Krishna, R.}, Sobran, A., 
+    \& Menzies, T. \textit{``Continuous Integration: The Silver Bullet?''}. 
+    (Under review)\textbf{ ICSE 2018 SEIP}. 
+    Preprint: 
+    \href{https://arxiv.org/abs/1711.03933}{arXiv:1711.03933};\\[0.1cm]
+    \newpage
+    \item\small Agrawal, A., Rahman, A., \underline{Krishna, R.}, Sobran, A., 
+    \& Menzies, T. \textit{``We Don't Need Another Hero? The Impact of Heroes on Software Development''}. 
+    (Under review)\textbf{ ICSE 2018 SEIP}. 
+    Preprint: 
+    \href{https://arxiv.org/abs/1711.03933}{arXiv:1711.03933};
+\end{itemize}
+
+
+As to my accepted work, I have published an article at \textit{Automated 
+Software 
+Engineering} 2016, Singapore. I also have two accepted papers premier journals 
+such as \textit{IEEE Transactions in Software Engineering} and 
+and \textit{Information and Software Technology} journal. My other work at 
+\textit{IEEE Transactions in Software Engineering} 
+journal is awaiting a second round 
+review. These are listed below:\\[0.33cm]
+
+\begin{itemize}
+
+\item\small \underline{Krishna, R.}, Menzies, T., \& Layman, L. 
+    \textit{``Less is more: Minimizing code reorganization using XTREE''}. In 
+    \textbf{Information and Software Technology}, Volume 88, 2017, Pages 53-66;\\[0.1cm]
+    
+    \item\small  \underline{Krishna, R.}, Menzies, T., \& Fu, W. \textit{``Too 
+    much automation? The Bellwether Effect and its Implications for Transfer 
+    Learning.''} \textbf{31st Intl. Conference on Automated Software 
+    Engineering, Sept. 2016};\\[0.1cm]
+    
+    \item\small \underline{Krishna, R.} \& Menzies, T.. \textit{``Bellwethers: 
+    A Baseline Method For Transfer Learning''}. In\textbf{ IEEE Transactions on 
+    Software Engineering} (pending revisions), 2017;\\[0.1cm]
+    
+    \item\small Chen, J., Nair, V., \underline{Krishna, R.}, \& Menzies, T. 
+    \textit{``Sampling as a Baseline Optimizer for Search-based Software
+    Engineering''}. In \textbf{IEEE Transactions on Software Engineering} 
+    (accepted, to appear), 2017;\\[0.1cm]
+\end{itemize}
+
+I strongly believe that I would be an asset to your organization. A full-time 
+position here would provide me with the ideal opportunity to assist your 
+organization and to further expand my skills.
+
+I have attached my resume for your reference. If you feel that my 
+qualifications seem to be a match for positions in your organization, I should 
+greatly appreciate an opportunity to schedule an interview at a mutually 
+convenient time.
+
+Thank you very much for your consideration.
+
+
+\makeletterclosing
+
+\end{document}
