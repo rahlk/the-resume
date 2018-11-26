@@ -26,7 +26,7 @@
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
-
+\definecolor{blue}{rgb}{0.08, 0.3, 0.75}
 % Adjust margins
 \addtolength{\oddsidemargin}{-0.6in}
 \addtolength{\evensidemargin}{-0.375in}
@@ -42,14 +42,14 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-6pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{-6pt}\color{blue}\bfseries\scshape\raggedright\large
+}{}{0em}{}[\titlerule \vspace{-5pt}]
 
 %-------------------------
 % Custom commands
 \newcommand{\resumeItem}[2]{
   \item[]\small{
-    \textbf{#1}{: #2 \vspace{-2pt}}
+    \textbf{#1}{: #2 }% \vspace{-1pt}}
   }
 }
 
@@ -58,10 +58,10 @@
     \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-5pt}
+    \end{tabular*}\vspace{-4pt}
 }
 
-\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-2pt}}
 
 \renewcommand{\labelitemii}{$\circ$}
 
@@ -69,7 +69,7 @@
 \newcommand{\resumeSubHeadingListStartNM}{\begin{itemize}[noitemsep, leftmargin=12pt]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}[noitemsep, leftmargin=8pt]}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
 
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -79,7 +79,7 @@
 \fontfamily{qhv}\selectfont
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \href{http://tiny.cc/rkrsnGScholar}{\textbf{{\LARGE \textsc{Rahul} KRISHNA}}} 
+  \href{http://tiny.cc/rkrsnGScholar}{\textbf{{\color{blue} \LARGE \textsc{Rahul} KRISHNA}}} 
   & Email : 
   \href{mailto:rkrish11@ncsu.edu}{rkrish11@ncsu.edu}\\
   \href{http://rkrsn.us/}{http://rkrsn.us} $\diamond$ 
@@ -88,8 +88,12 @@
   119 Karen Ct, Cary, NC 27511& LinkedIn: 
   \href{https://www.linkedin.com/in/rkrsn/}{linkedin.com/in/rkrsn}\\[-0.3cm]
 \end{tabular*}
+\vspace{0.2em}
 
-
+% %-----------Objective-----------------
+% \section{Objective}
+% Now that  DevOps  is done, it is time to solve our next grand challenge; i.e. how to integrate  AI + SE methods so human and artificial intelligence  can better understand and help each other to solve 21st century business problems
+% \vspace{-0.5em}
 %-----------EDUCATION-----------------
 \section{Education}
   \resumeSubHeadingListStart
@@ -108,127 +112,152 @@
 %-----------EXPERIENCE-----------------
 \section{Technical Skills}
   \resumeSubHeadingListStart
-    \resumeSubItem{General Expertise}{Machine 
-    Learning, Natural Language Processing, Multiobjective Optimization, 
-    Empirical Software Engineering;}
-    \resumeSubItem{Data Analytics}{Spark, Hadoop, Elasticsearch, S3, Weka, 
-    Sklearn, JMetal. Visualization: Kibana, D3JS, Matplotlib;}
-    \resumeSubItem{Cloud Computing}{AWS ecosystem: EMR, Apache Livy, Cloud 
-    Formation, AWS Lambda, Chalice;}
-    \resumeSubItem{Programming}{Proficient: Python, Javascript, \& R. Also 
-    familiar with: Java, Scala, C++, \& Lua;}
-    \resumeSubItem{DevOps}{Ansible, Vagrant, Travis, Jenkins, Docker.}
+    \resumeSubItem{General Expertise}{Statistics, Machine 
+    Learning, Natural Language Processing, Program Analysis, Optimization;}\\[-0.6em]
+    \resumeSubItem{Programming}{Proficient: Python (5+ years), MATLAB (4+ years), C/C++ (2+ years). Working Knowledge: R, Javascript, Scala;}
+    % \resumeSubItem{DevOps}{Ansible, Vagrant, Travis, Jenkins, Docker.}
   \resumeSubHeadingListEnd
 
 \section{Work Experience}
 
 \resumeSubHeadingListStart
-\resumeSubheading{Data Science Intern}{May 2017 - Aug. 2017}
-{LexisNexis}{Raleigh, NC}
+
+\resumeSubheading{Phase Change LLC}{Golden, CO}
+{Research intern, Financial Data Mining}{June 2018 - Aug. 2018}
 \resumeItemListStart
-\item Worked on deploying computational linguistics and 
-machine learning algorithms for processing 1M+ legal documents. 
-\item Contributions include: 
-(1) Clustering more than 1 million documents based word2vec and doc2vec to 
-identify representatives for specific legal topics; (2) Developing
-automated text tools to summarize very large legal documents into legal 
-``headnotes'';
+\item Developed an ontology based vector embedding model to automatically extract financial domain knowledge from COBOL.
+\item Achieved confidence scores $\geq$80\% on determining banking concepts in COBOL code as measured by surveying subject matter experts and active COBOL developers. 
+\item[]\textit{\textbf{Languages:} Python; \textbf{Frameworks:} Apache Jena, Gensim; \textbf{Skills:} Static Code Analysis, Ontology development, SPARQL.}
 \resumeItemListEnd
 
-\resumeSubheading{Software Engineering Intern}{May 2016 - Aug. 2016}
-{LexisNexis}{Raleigh, NC}
+\resumeSubheading{LexisNexis Legal \& Professional}{Raleigh, NC}{Data Science Intern, Natural Language Processing and Information Retrieval}{May 2017 - Aug 2017}
 \resumeItemListStart
-\item Designed a sandbox app for e-discovery. Sandbox was 
-used to improve the classification accuracy of SVM by $\approx$ 20\%.
+\item Developed and deployed a text summarization framework for generating ``headnotes'' in more than 1 Million legal documents. 
+\item Designed a scalable clustering and a classification scheme with \textit{doc2vec} to categorize documents into specific legal topics; 
+\item Demonstrated that the above framework can reduce document review time by $\geq$50\% according to in-house user surveys.
+\item[]\textit{\textbf{Languages:} Python, Scala; \textbf{Frameworks:} Tensorflow, Spark, Livy, AWS--EMR, Lambda, CloudFormation; \textbf{Skills:} ML, NLP.}
+\resumeItemListEnd
 
-\item Contributions: (1) Translating internal mechanisms of SVM into human 
-comprehensible format; (2) Improved text classification accuracy of SVM by 
-modifying support vectors using active learning and feedback from human-in-loop.
+\resumeSubheading{LexisNexis Legal \& Professional}{Raleigh, NC}{Data Science Intern, Natural Language Processing and E-Discovery}{May 2016 - Aug 2016}
+\resumeItemListStart
+\item Designed a sandbox application for automated document retrieval in Technology Assisted Review (TAR) and E-Discovery. 
+\item Improved the classification accuracy of SVM in highly skewed samples by $\approx$ 20\% using active reinforcement learning.
+\item[]\textit{\textbf{Languages:} Python, Javascript; \textbf{Frameworks:} Spark, Elasticsearch, Logstash, Flask; \textbf{Skills:} ML, NLP, Web design.}
 
 \resumeItemListEnd
+
 \resumeSubHeadingListEnd
 
-\section{Selected Research Projects}
+\section{Research Projects}
 
 \resumeSubHeadingListStart
 
-\resumeSubheading{Planning in Software Engineering}{Sept 2015 - Present}
-{NSF funded project in the RAISE Lab}{Raleigh, NC}
+\resumeSubheading{Planning in Software Engineering}{Raleigh, NC}
+{NSF funded project in the RAISE Lab}{Sept 2015 - Present}
 \resumeItemListStart
 	\item Developed a novel planning algorithm called XTREE to assist 
-	developers in software refactoring and code reorganization.
-	\item Showed that XTREE can generate succinct and effective plans. 
-	Experiments showed that XTREE can reduce defects by more than 80\% in 
-	several cases.
+	developers in software maintenance and defect reduction.
+	\item Demonstrated that XTREE can generate succinct plans (75\% smaller plans than other approaches). 
+	\item Demonstrated that XTREE can reduce defects by more than 80\% in several cases.
 \resumeItemListEnd
 
-\resumeSubheading{Transfer Learning in Software Engineering}{Sept 2015 - 
-Present}{NSF funded project in the RAISE Lab}{Raleigh, NC}
+\resumeSubheading{Transfer Learning in Software Engineering}{Raleigh, NC}{NSF funded project in the RAISE Lab}{Sept 2015 - 
+Present}
 \resumeItemListStart
 	\item Demonstrated the existence of a \textit{``Bellwether Effect''} in 
-	several domains within software engineering.
-	\item The \textit{bellwethers} were shown to be a very effective baseline 
-	for transfer learning. Also showed that they are very easy to discover and 
-	usually outperform 
-	several 
-	state-of-the-art transfer learners in software engineering.
+	several domains within software engineering. 
+	\item Demonstrated that the \textit{bellwether} projects outperformed state-of-the-art transfer learners with Recall and False Alarm $\geq75\%$.
 \resumeItemListEnd
 
-\resumeSubheading{Validating Industrial Text Mining}{Sept 2015 - May 2017}
-{Industrial collaboration with LexisNexis}{Raleigh, NC}
+\resumeSubheading{IBM Software Group~\textnormal{(Research~Collaboration)}}{Research Triangle Park, NC}{Assessing Development Practices in opensource and in-house projects.}{March 2017 - 
+May 2018}
 \resumeItemListStart
-\item Worked on validating large scale natural language processing pipelines 
+	\item Developed time-series models to forecast issues, bugs, and enhancements in 800+ opensource \& IBM in-house projects.
+	\item Demonstrated effectiveness of moving-window ARIMA models in forecasting 4-weeks of future issues, bugs, and enhancements in 66\% of the projects with an accuracy of 85-95\% (IBM in-house) and 75-85\% (opensource). 
+	\item Studied the effect of CI/CD and developer collaboration in reducing bugs in 800+ opensource \& IBM in-house projects.
+	\item Demonstrated that earlier adoption of CI/CD stimulates developer collaboration and reduces bugs in IBM in-house projects.
+\resumeItemListEnd
+
+\resumeSubheading{LexisNexis Legal \& Professional~\textnormal{(Research~Collaboration)}}{Raleigh, NC}{Software Engineering for Big Data and Industrial Text Mining}{Sept 2015 - May 2017}
+%{\footnotesize \textit{(Research %collaboration)}}
+\resumeItemListStart
+\item Validated large scale natural language processing pipelines empirically
 for technology assisted review at LexisNexis.
-\item Demonstrated the usefulness of context specific ensemble learners and 
-active learning for document classification.
-\item Demonstrated the effectiveness of several data preprocessing techniques 
-such SMOTE for enhancing information retrieval.
+\item Developed a quantitative 6-point metric set for assessing best-practices in industrial text mining.
+\item Demonstrated the effectiveness of the 6-point metric in alleviating effort in making design choices for industrial text mining.
 \resumeItemListEnd
 
 
 \resumeSubHeadingListEnd
 
+\section{Teaching Assistantships}
+
+\resumeSubHeadingListStart
+\resumeSubheading{CSC591: Foundations of Software Science}{Fall 2018 (ongoing)}{Special Topics in Computer Science}{}
+\resumeItemListStart
+	\item Assisting in teaching the foundations of software engineering principles to a class of 30 graduate students.
+	\item Offering guest lectures on intermediate and advanced functional programming in python with a focus on best practices.
+	\item Assisting in designing and grading homework assignments and mid-semester examinations.
+\resumeItemListEnd
+\resumeSubheading{CSC591: Automated Software Engineering}{Fall 2016}{Special Topics in Computer Science}{}
+\resumeItemListStart
+	\item Aided in teaching the principles of software engineering and applied data science to a class of 49 graduate students.
+	\item Assisted in designing and grading homework assignments, mid-semester examinations, and final project reports.
+	\item Offered guest lectures on the state-of-the-art in software engineering, software testing, and maintainability research.
+	\item Assisted in mentoring over 12 distinct class projects on applying data mining, metaheuristic search, and natural language processing to software engineering.
+\resumeItemListEnd
+\resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------------
 \section{Selected Publications}
 \begin{enumerate}[label={[\arabic*]}, leftmargin=15pt]
 
+    \item\small \underline{Krishna, R.} \& Menzies, T.. \textit{``Bellwethers:
+    A Baseline Method For Transfer Learning''}. In \textbf{IEEE Transactions on Software Engineering, 2018}. Online: 
+    \href{https://arxiv.org/abs/1703.06218}{https://arxiv.org/abs/1703.06218}\vspace{-6pt};
+
     \item\small \underline{Krishna, R.}, Menzies, T., \& Layman, L. 
     \textit{``Less is more: Minimizing code reorganization using XTREE''}. In 
     \textbf{Information and Software Technology, 2017}. 
-    DOI:  
-    \href{https://arxiv.org/abs/1609.03614}{10.1016/j.infsof.2017.03.012}\vspace{-6pt};
+    Online:  
+    \href{https://arxiv.org/abs/1609.03614}{https://arxiv.org/abs/1609.03614}\vspace{-6pt};
     
-    \item\small  \underline{Krishna, R.}, Menzies, T., \& Fu, W. \textit{``Too 
+    \item\small  \underline{Krishna, R.}, Menzies, T., \& Fu, W. \textit{``Too
     much automation? The Bellwether Effect and its Implications for Transfer 
-    Learning.''} \textbf{31st Intl. Conference on Automated Software 
-    Engineering, Sept. 2016}. DOI: 
-    \href{https://doi.org/10.1145/2970276.2970339}{10.1145/2970276.2970339}\vspace{-6pt};
-    
-    \item\small \underline{Krishna, R.} \& Menzies, T.. \textit{``Bellwethers: 
-    A Baseline Method For Transfer Learning''}. In \textbf{IEEE Transactions on 
-    Software Engineering, 2018}. Preprint: 
-    \href{https://arxiv.org/abs/1703.06218}{arXiv:1703.06218}\vspace{-6pt};
-    
-    \item\small Chen, J., Nair, V., \underline{Krishna, R.}, \& Menzies, T. 
-    \textit{``Sampling as a Baseline Optimizer for Search-based Software 
-    Engineering''}. In \textbf{IEEE Transactions on Software Engineering, 2018}. Preprint: 
-    \href{https://arxiv.org/abs/1608.07617}{arXiv:1608.07617}\vspace{-6pt};
-    
-    \item\small \underline{Krishna, R}. \textit{``Learning effective changes 
-    for software projects''}. \textbf{ACM Transactions on Software Engineering and Methodology, 2018}. (pending revisions) Available: 
-    \href{https://arxiv.org/abs/1708.05442}{arXiv:1708.05442}\vspace{-6pt};
+    Learning.''} In \textbf{Intl. Conference on Automated Software 
+    Engineering, 2016}. Online: 
+    \href{https://doi.org/10.1145/2970276.2970339}{https://doi.org/10.1145/2970276.2970339}\vspace{-6pt};
     
     \item\small \underline{Krishna, R.}, Agrawal, A., Rahman, A., Sobran, A., 
     \& Menzies, T. \textit{``What is the Connection Between Issues, Bugs, and 
     Enhancements? (Lessons Learned from 800+ Software Projects)''}. 
-    \textbf{ICSE 2018 SEIP}. Pre: 
-    \href{https://arxiv.org/abs/1710.08736}{arXiv:1710.08736}\vspace{-6pt};
+    \textbf{Intl. Conf. Software Engineering, 2018 SEIP}. Online: 
+    \href{https://arxiv.org/abs/1710.08736}{https://arxiv.org/abs/1710.08736}\vspace{-6pt};
+    
+    \item\small \underline{Krishna, R.}, Yu, Z., Agrawal, A., Dominguez, M., Wolf, D. \textit{``The `BigSE' Project: Lessons Learned from Validating Industrial Text Mining. ''}. In \textbf{Intl. Workshop on Big Data Software Engineering (BIGDSE), 2016}. Online: \href{http://tiny.cc/BIGDSE16}{http://tiny.cc/BIGDSE16}\vspace{-6pt};
 
-    \item\small Agrawal, A., \underline{Krishna, R.},  Rahman, A., Sobran, A., 
+    \item\small \underline{Krishna, R.} \& Menzies, T. \textit{``Actionable=Cluster+Contrast?''}. In \textbf{Intl. Conference on Automated Software Engineering Workshop, 2015}. Online:~\href{http://tiny.cc/ase15action}{http://tiny.cc/ase15action}\vspace{-6pt};
+    
+    \item\small Ganesh, M.R., \underline{Krishna, R.}, Manikantan, K. \& Ramachandran, S., \textit{``Entropy based Binary Particle Swarm Optimization and classification for ear detection''}. In \textbf{Engineering Applications of Artificial Intelligence, 2014.}, Online:~\href{http://tiny.cc/EBPSO14}{http://tiny.cc/EBPSO14}\vspace{-6pt};
+    
+    \item\small Chen, J., Nair, V., \underline{Krishna, R.}, \& Menzies, T. 
+    \textit{``Sampling as a Baseline Optimizer for Search-based Software 
+    Engineering''}. In \textbf{IEEE Transactions on Software Engineering, 2018}. Online: 
+    \href{https://arxiv.org/abs/1608.07617}{arXiv:1608.07617}\vspace{-6pt};
+    
+    \item\small Chen, D., Fu, W., \underline{Krishna, R.}, \& Menzies, T. \textit{``Applications of psychological science for actionable analytics''}. In \textbf{Intl. Conference on Foundations of Software Engineering, 2018}. Online: 
+    \href{https://arxiv.org/abs/1803.05067}{arXiv:1803.05067}\vspace{-6pt};
+    
+    \item\small Agrawal, A.,  Rahman, A., \underline{Krishna, R.}, Sobran, A.
     \& Menzies, T. \textit{``We Don't Need Another Hero? The Impact of `Heroes' on Software Development''}. 
-    \textbf{ICSE 2018 SEIP}. Pre: 
+    \textbf{Intl. Conf. Software Engineering, 2018 SEIP}. Online: 
     \href{https://arxiv.org/abs/1710.09055}{arXiv:1710.09055}\vspace{-6pt};
+    
+    \item\small Rahman, A., Agrawal, A., \underline{Krishna, R.}, Sobran, A.
+    \& Menzies, T. \textit{``Characterizing The Influence of Continuous Integration. Empirical Results from 250+ Open Source and Proprietary Project''}. 
+    \textbf{Intl. Conference on Foundations of Software Engineering, SWAN 2018}. Prerint: 
+    \href{https://arxiv.org/pdf/1711.03933}{https://arxiv.org/pdf/1711.03933}\vspace{-6pt};
+    
     
 \end{enumerate}
 

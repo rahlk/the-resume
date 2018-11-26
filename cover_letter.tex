@@ -6,7 +6,7 @@
 % available at http://www.latex-project.org/lppl/.
 
 
-\documentclass[11pt,letterpaper,sans]{moderncv}         \moderncvstyle{casual}
+\documentclass[10pt,letterpaper,sans]{moderncv}         \moderncvstyle{casual}
 \moderncvcolor{blue}
 \usepackage[utf8]{inputenc}
 \usepackage[scale=0.75]{geometry}
@@ -34,8 +34,8 @@
 \begin{document}
 %-----       letter       ---------------------------------------------------------
 % recipient data
-\recipient{Bloomberg LP}{731 Lexington Ave,\\
-New York, NY 10022\\
+\recipient{Real-Time Innovations}{232 E. Java Drive,\\
+Sunnyvale, CA 94089,\\
 USA}
 \date{\today}
 \opening{Dear Sir or Madam,}
@@ -44,113 +44,54 @@ USA}
 
 \makelettertitle
 
-I am writing to apply for a full-time position at Bloomberg. I am a Final year 
-Ph. D. student majoring in computer science from North Carolina State 
-University. I am being advised by Dr. Tim Menzies. My research focuses 
-primarily on empirical software engineering, computational linguistics, and 
-data driven decision making.
+I am writing to apply for the position of Research Engineer, Software at Real-Time Innovations. I am a Final year Ph.D. student majoring in computer science at North Carolina State University. I am being advised by Dr. Tim Menzies. My research focuses primarily on data-driven decision making, empirical software engineering, and computational linguistics.
 
-I believe that I have the industrial and research experience required to be an 
-effective team member at your group. In terms of industrial experience, I have 
-worked extensively with machine learning, natural language processing, and 
-their applications to legal text mining. Following is a brief summary of my 
-work:\\[0.33cm]
+I believe that I have the industrial and research experience required to be an effective team member in your organization. In terms of my industrial experience, I have worked extensively with machine learning, natural language processing, and their applications to domains such as program analysis and legal text mining. 
+In the following, I provide a brief summary of my industrial experiences.\\[0.33cm]
 \begin{itemize}
-	\item Over the summer of 2017, I worked on 
-deploying large scale computational linguistics and 
-machine learning algorithms for processing over 1 million of legal documents. 
-Specifically, I developed tools for automated text summarization of very large 
-legal documents using TensorFlow. With these I was able to summarize large 
-legal documents into so-called \textit{headnotes}. Subject matter experts 
-opined that 
-these headnotes were very similar to human-generated analogs. Further, I was 
-also responsible for developing additional machine learning algorithms so that 
-they can be deployed to production. To achieve this, I worked extensively with 
-the devops pipeline within the AWS ecosystem to enable seamless integration of 
-machine learning algorithms with the current product.\\[0.1cm]
- \item In the summer of 2016, I was tasked with "opening the black-box" that is 
- SVM. For this, I designed a sandbox app for e-discovery. This sandbox was very 
- useful improving the classification accuracy of SVM by approximately 20\%. My 
- Contributions include: 
- (1) Translating internal mechanisms of SVM into human comprehensible format. 
- For this, I extracted the support vectors and mapped them to actual words, 
- phrases, and paragraphs in the text. These were then presented to users so 
- they may get some insights on how SVM made its prediction; 
- (2) By soliciting feedback from the end users (human-in-loop) regarding the 
- quality of these support vectors, I was able to incorporate these feedback 
- with the help of active learning to improve the text classification accuracy 
- of SVM.
+\item Over this summer, I worked on extracting domain knowledge from legacy programming languages such as COBOL. Organizations that use COBOL embed a large number of business rules and domain knowledge in the code. Updating and maintaining the systems require a thorough understanding of the embedded knowledge. But this is difficult due to lack of adequate documentation owing to the original developers having retired. Therefore, we developed a Natural Language framework to automatically extract domain knowledge and business rules from COBOL. Specifically, we developed an ontology-based joint-vector embedding model to annotate and enrich program slices from COBOL with relevant domain knowledge. The framework was encouragingly effective in classifying program slices from COBOL into specific concepts from the ontology. Further, we were able to offer a human-intelligible summary of the business logic embedded in the program.\\[0.1cm]
+\item Over the summer of 2017, I worked on deploying large-scale computational linguistics and machine learning algorithms for processing over 1 million of legal documents. Specifically, I developed tools for automated text summarization of very large legal documents using TensorFlow. With these, I was able to summarize large legal documents into so-called \textit{headnotes}. Subject matter experts opined that these headnotes were very similar to human-generated analogs. Further, I was also responsible for developing additional machine learning algorithms so that they can be deployed to production. To achieve this, I worked extensively with the DevOps pipeline within the AWS ecosystem to enable seamless integration of machine learning algorithms with the current product.\\[0.1cm]
+\item In the summer of 2016, I was tasked with "opening the black-box" that is SVM. For this, I designed a sandbox app for e-discovery. This sandbox was very useful for improving the classification accuracy of SVM by approximately 20\%. My contributions include: (1) Translating internal mechanisms of SVM into a human-comprehensible format. For this, I extracted the support vectors and mapped them into actual words, phrases, and paragraphs in the text. These were then presented to users so they may get some insights on how SVM made its prediction; (2) By soliciting feedback from the end users (human-in-loop) regarding the quality of these support vectors, I was able to incorporate these feedback with the help of active learning to improve the text classification accuracy of SVM.\\[0.1cm]
  
 \end{itemize}
 
-As to my research work, several of my recent papers show that I have done work 
-in areas that may be of further interest to you. Much of my work studies how 
-machine learning applications can be applied to streamline software engineering 
-practices. I have 3 papers 
-under review at this time for the ICSE'18 software engineering in practice 
-track.  \\[0.33cm]
+As to my research work, several of my recent papers show that I have done work in areas that may be of further interest to you. Much of my work studies how machine learning applications can be applied to streamline software engineering practices. 
+\newpage
+I have published articles at major conferences such as \textit{International Conference on Software Engineering, Symposium on the Foundations of Software Engineering, International Conference on Automated Software Engineering}. I also have three published papers in premier journals such as \textit{IEEE Transactions in Software Engineering} and \textit{Information and Software Technology} journal. Some selected publications are listed below (for a full list, kindly see \href{http://rkrsn.us/publications/}{http://rkrsn.us/publications/}):\\[0.5cm]
+
 
 \begin{itemize}
-    \item\small \underline{Krishna, R.}, Agrawal, A., Rahman, A., Sobran, A., 
-    \& Menzies, T. \textit{``What is the Connection Between Issues, Bugs, and 
-    Enhancements? (Lessons Learned from 800+ Software Projects)''}. (Under 
-    review) \textbf{ICSE 2018 SEIP}. Pre: 
-    \href{https://arxiv.org/abs/1710.08736}{arXiv:1710.08736};\\[0.1cm]
-    
-    \item\small Rahman, A., Agrawal, A., \underline{Krishna, R.}, Sobran, A., 
-    \& Menzies, T. \textit{``Continuous Integration: The Silver Bullet?''}. 
-    (Under review)\textbf{ ICSE 2018 SEIP}. 
-    Preprint: 
-    \href{https://arxiv.org/abs/1711.03933}{arXiv:1711.03933};\\[0.1cm]
-    \newpage
-    \item\small Agrawal, A., Rahman, A., \underline{Krishna, R.}, Sobran, A., 
-    \& Menzies, T. \textit{``We Don't Need Another Hero? The Impact of Heroes on Software Development''}. 
-    (Under review)\textbf{ ICSE 2018 SEIP}. 
-    Preprint: 
-    \href{https://arxiv.org/abs/1711.03933}{arXiv:1711.03933};
-\end{itemize}
-
-
-As to my accepted work, I have published an article at \textit{Automated 
-Software 
-Engineering} 2016, Singapore. I also have two accepted papers premier journals 
-such as \textit{IEEE Transactions in Software Engineering} and 
-and \textit{Information and Software Technology} journal. My other work at 
-\textit{IEEE Transactions in Software Engineering} 
-journal is awaiting a second round 
-review. These are listed below:\\[0.33cm]
-
-\begin{itemize}
-
-\item\small \underline{Krishna, R.}, Menzies, T., \& Layman, L. 
-    \textit{``Less is more: Minimizing code reorganization using XTREE''}. In 
-    \textbf{Information and Software Technology}, Volume 88, 2017, Pages 53-66;\\[0.1cm]
-    
-    \item\small  \underline{Krishna, R.}, Menzies, T., \& Fu, W. \textit{``Too 
-    much automation? The Bellwether Effect and its Implications for Transfer 
-    Learning.''} \textbf{31st Intl. Conference on Automated Software 
-    Engineering, Sept. 2016};\\[0.1cm]
-    
     \item\small \underline{Krishna, R.} \& Menzies, T.. \textit{``Bellwethers: 
     A Baseline Method For Transfer Learning''}. In\textbf{ IEEE Transactions on 
-    Software Engineering} (pending revisions), 2017;\\[0.1cm]
+    Software Engineering}, 2018. Available: \href{https://arxiv.org/abs/1703.06218.pdf}{https://arxiv.org/abs/1703.06218.pdf};\\[0.2cm]
+    
+    \item\small \underline{Krishna, R.}, Menzies, T., \& Layman, L. 
+    \textit{``Less is more: Minimizing code reorganization using XTREE''}. In 
+    \textbf{Information and Software Technology}, 2017. Available: \href{https://arxiv.org/abs/1609.03614.pdf}{https://arxiv.org/abs/1609.03614.pdf};\\[0.2cm]
+    
+    \item\small \underline{Krishna, R.}, Agrawal, A., Rahman, A., Sobran, A., 
+    \& Menzies, T. \textit{``What is the Connection Between Issues, Bugs, and 
+    Enhancements? (Lessons Learned from 800+ Software Projects)''}. 
+    \textbf{ICSE 2018, SEIP}. Available: \href{https://arxiv.org/abs/1710.08736}{https://arxiv.org/abs/1710.08736};\\[0.2cm]
     
     \item\small Chen, J., Nair, V., \underline{Krishna, R.}, \& Menzies, T. 
     \textit{``Sampling as a Baseline Optimizer for Search-based Software
-    Engineering''}. In \textbf{IEEE Transactions on Software Engineering} 
-    (accepted, to appear), 2017;\\[0.1cm]
+    Engineering''}. In \textbf{IEEE Transactions on Software Engineering}, 2018. Available: \href{https://arxiv.org/abs/1608.07617}{https://arxiv.org/abs/1608.07617};\\[0.2cm]
+
+    \item\small Chen, D., Fu, W., \underline{Krishna, R.}, \& Menzies, T. \textit{``Applications of Psychological Science for Actionable Analytics''}. \textbf{FSE 2018} (Accepted). Available: \href{https://arxiv.org/abs/1803.05067}{arXiv:1803.05067};\\[0.2cm]
+
+    \item\small Agrawal, A., Rahman, A., \underline{Krishna, R.}, Sobran, A., 
+    \& Menzies, T. \textit{``We Don't Need Another Hero? The Impact of Heroes on Software Development''}. 
+    \textbf{ ICSE 2018, SEIP}. Available: \href{https://arxiv.org/abs/1711.03933}{https://arxiv.org/abs/1711.03933};
+
 \end{itemize}
 
-I strongly believe that I would be an asset to your organization. A full-time 
-position here would provide me with the ideal opportunity to assist your 
-organization and to further expand my skills.
 
-I have attached my resume for your reference. If you feel that my 
-qualifications seem to be a match for positions in your organization, I should 
-greatly appreciate an opportunity to schedule an interview at a mutually 
-convenient time.
+I strongly believe that I would be an asset to your organization. A full-time position here would afford me the ideal opportunity to assist your organization and to further expand my skills.
 
-Thank you very much for your consideration.
+I have attached my resume for your reference. If you feel that my qualifications appear to be a match for positions available in your organization, I should greatly appreciate an opportunity to schedule an interview at a mutually convenient time.
+
+Thank you very much for your consideration.\\[1cm]
 
 
 \makeletterclosing
